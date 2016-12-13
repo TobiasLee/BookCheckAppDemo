@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="top.tobiaslee.gsontest.MainActivity">
+
+
+    <TableRow>
+
+        <EditText
+            android:id="@+id/check_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+
+            android:hint="请输入要查询的书名"/>
+        <Button
+            android:id="@+id/check_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/book_before"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一本"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/next_book"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="下一本"
+            android:layout_weight="1"/>
+
+
+    </TableRow>
+
+
+    <TextView
+            android:id="@+id/search_result"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:textSize="10dp"/>
+
+
+
+
+
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/book_image"
+
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            />
+
+
+
+        <TextView
+
+            android:text="书名 :"
+            android:textSize="20dp"
+
+            android:layout_marginLeft="5dp"
+
+            android:layout_width="wrap_content"/>
+        <TextView
+            android:id="@+id/title_book"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+
+
+        <TextView
+
+            android:text="作者 :"
+
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="15dp"
+            android:text=""
+            android:id="@+id/author"
+            android:layout_marginLeft="30dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:text="价格："
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="30dp"
+
+            android:layout_width="match_parent"/>
+
+
+
+    <TextView
+            android:text="作者简介 ："
+            android:layout_marginTop="5dp"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="5dp"
+           android:layout_marginLeft="5dp" />
+
+    <TextView
+
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:scrollbars="vertical"
+            android:maxLines="10"
+            android:id="@+id/author_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+</TableLayout>
