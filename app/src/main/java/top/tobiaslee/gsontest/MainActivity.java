@@ -89,7 +89,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     private void parseJSONWithGSON(String responseData){
         Gson gson = new Gson();
-       // String bookData = dataCut(responseData);
         //Log.d("bookData",bookData);
         SearchResult result = gson.fromJson(responseData,SearchResult.class);
         bookSearchResult = result.getBooks();
